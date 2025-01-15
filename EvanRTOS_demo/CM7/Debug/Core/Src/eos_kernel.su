@@ -1,0 +1,17 @@
+../Core/Src/eos_kernel.c:78:15:EOS_ThreadNew	40	static
+../Core/Src/eos_kernel.c:163:6:EOS_Init	24	static,ignoring_inline_asm
+../Core/Src/eos_kernel.c:189:35:EOS_Start	0	static,ignoring_inline_asm
+../Core/Src/eos_kernel.c:219:13:EOS_scheduler	24	static
+../Core/Src/eos_kernel.c:249:28:PendSV_Handler	0	static,ignoring_inline_asm
+../Core/Src/eos_kernel.c:288:6:SysTick_Handler	8	static
+../Core/Src/eos_kernel.c:321:6:EOS_Delay	16	static
+../Core/Src/eos_kernel.c:344:14:EOS_Pause	16	static
+../Core/Src/eos_kernel.c:382:14:EOS_Resume	16	static
+../Core/Src/eos_kernel.c:409:6:EOS_Suspend	4	static
+../Core/Src/eos_kernel.c:417:6:EOS_EnterCritical	4	static,ignoring_inline_asm
+../Core/Src/eos_kernel.c:425:6:EOS_ExitCritical	4	static,ignoring_inline_asm
+../Core/Src/eos_kernel.c:438:6:EOS_TaskUnblock	32	static
+../Core/Src/eos_kernel.c:472:13:EOS_HandleTimeout	16	static
+../Core/Src/eos_kernel.c:503:13:EOS_InitStack	24	static
+../Core/Src/eos_kernel.c:535:13:EOS_InitFpuStack	40	static
+../Core/Src/eos_kernel.c:567:6:idleTask	4	static

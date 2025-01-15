@@ -1,0 +1,7 @@
+../Core/Src/eos.c:91:6:EvanRTOS_Init	16	static
+../Core/Src/eos.c:111:6:task0	16	static
+../Core/Src/eos.c:134:6:task1	16	static
+../Core/Src/eos.c:150:6:task2	16	static
+../Core/Src/eos.c:160:6:task3	16	static
+../Core/Src/eos.c:175:6:task4	8	static
+../Core/Src/eos.c:189:6:task5	16	static
