@@ -1,7 +1,7 @@
 # EvanRTOS
-EvanRTOS is a lightweight, custom-built, real time operating system designed for STM32 Cortex-M microcontrollers. It is built around a priority-based, preemptive scheduler, and contains a variety of other features such as semaphores, queues, task delays and more. Inspired by the CMSIS v2 OS API/Wrapper, EvanRTOS contains a small subset of its operations and data structures, although with variable names like EOS_Name instead of CMSIS OS' osName. 
+EvanRTOS is a lightweight, custom-built, real time operating system designed for STM32 Cortex-M microcontrollers. It is built around a priority-based, preemptive scheduler, and contains a variety of other features such as semaphores, queues, task delays and more. Inspired by the CMSIS v2 OS API/Wrapper, EvanRTOS contains a small subset of its operations and data structures, although with function names like EOS_Name instead of CMSIS OS' osName. 
 
-EvanRTOS was developed with STM32's Hardware Abstraction Layer (HAL) in mind. While the os does not call any HAL functions, it does not explicitly set up Systick/PendSV interrupt priorities, and does not default the Systick Interrupt period to 1ms (which is done by default by HAL). For more info, see the **Getting Started **section. 
+EvanRTOS was developed with STM32's Hardware Abstraction Layer (HAL) in mind. While the os does not call any HAL functions, it does not explicitly set up Systick/PendSV interrupt priorities, and does not default the Systick Interrupt period to 1ms (which is done by default by HAL). For more info, see the **Getting Started** section. 
 
 EvanRTOS relies on CMSIS library functions.
 
@@ -30,7 +30,7 @@ Hopefully this overview shows what sort of behaviour EvanRTOS is capable of. Thr
 See the GIF below for a live view of global variables in this file to see how they change.
 
 <div align="center">
-  <img src="media/EvanRTOS_Demo.mp4" alt="EvanRTOS Demo" width="852" height="480">
+  <img src="media/EvanRTOS_Demo.gif" alt="EvanRTOS Demo" width="852" height="480">
 </div>
 
 ## RTOS Design
@@ -149,7 +149,7 @@ In order to start up EvanRTOS, you want to call
 EOS_Init(DEFAULT_TASK_PERIOD);
 ```
 
-However, you want to make sure that all of your tasks are setup before you do so. I recommend setting up your own EvanRTOS_Init() function, like the one that can be seen in eos.c in the demo. You want to call this function from your main function, before the forever loop. This function should then then setup your queues, semaphores, and tasks, before calling EOS_Init(). For example:
+However, you want to make sure that all of your tasks are setup before you do so. I recommend setting up your own EvanRTOS_Init() function, like the one that can be seen in eos.c in the demo. You want to call this function from your main function, before the forever loop. This function should  then setup your queues, semaphores, and tasks, before calling EOS_Init(). For example:
 
 ```c
 int main(){
@@ -169,7 +169,7 @@ void EvanRTOS_Init(){
 
 }
 ```
-This will pass full control to EvanRTOS, and it will begin running.
+This will pass full control to EvanRTOS, which will begin scheduling tasks.
 
 ##### Creaing a Task
 We can create a task with a statically allocated stack, that uses the FPU as follows:
@@ -250,7 +250,7 @@ Some other operations on EvanRTOS you may want to do:
 void task(){
 	while(1){
         EOS_Pause(task2_handle);
-		tcount++;
+	    tcount++;
 		EOS_Delay(1000); //will block the task for 1 second
         EOS_Resume(task2_handle);
 	}
