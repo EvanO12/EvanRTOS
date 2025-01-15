@@ -30,7 +30,7 @@ Hopefully this overview shows what sort of behaviour EvanRTOS is capable of. Thr
 See the GIF below for a live view of global variables in this file to see how they change.
 
 <div align="center">
-  <img src="media/EvanRTOS_Demo.gif" alt="EvanRTOS Demo" width="852" height="480">
+  <img src="media/EvanRTOS_Demo.mp4" alt="EvanRTOS Demo" width="852" height="480">
 </div>
 
 ## RTOS Design
