@@ -29,7 +29,9 @@ Here is an overview of what each Task Does:
 Hopefully this overview shows what sort of behaviour EvanRTOS is capable of. Through its features, task synchronization, and data transfer are made easy. 
 See the GIF below for a live view of global variables in this file to see how they change.
 
-![EvanRTOS Demo](media/EvanRTOS_Demo.gif)
+<div align="center">
+  <img src="media/EvanRTOS_Demo.gif" alt="EvanRTOS Demo" width="852" height="480">
+</div>
 
 ## RTOS Design
 Below is an overview of how EvanRTOS is designed.
