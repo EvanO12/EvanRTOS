@@ -1,0 +1,17 @@
+../Core/Src/eos_kernel.c:78:15:EOS_ThreadNew	9
+../Core/Src/eos_kernel.c:163:6:EOS_Init	2
+../Core/Src/eos_kernel.c:189:35:EOS_Start	1
+../Core/Src/eos_kernel.c:219:13:EOS_scheduler	7
+../Core/Src/eos_kernel.c:249:28:PendSV_Handler	1
+../Core/Src/eos_kernel.c:288:6:SysTick_Handler	3
+../Core/Src/eos_kernel.c:321:6:EOS_Delay	2
+../Core/Src/eos_kernel.c:344:14:EOS_Pause	4
+../Core/Src/eos_kernel.c:382:14:EOS_Resume	3
+../Core/Src/eos_kernel.c:409:6:EOS_Suspend	1
+../Core/Src/eos_kernel.c:417:6:EOS_EnterCritical	1
+../Core/Src/eos_kernel.c:425:6:EOS_ExitCritical	1
+../Core/Src/eos_kernel.c:438:6:EOS_TaskUnblock	7
+../Core/Src/eos_kernel.c:472:13:EOS_HandleTimeout	6
+../Core/Src/eos_kernel.c:503:13:EOS_InitStack	1
+../Core/Src/eos_kernel.c:535:13:EOS_InitFpuStack	4
+../Core/Src/eos_kernel.c:567:6:idleTask	1

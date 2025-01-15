@@ -1,0 +1,3 @@
+../Core/Src/eos_semaphore.c:38:14:EOS_SemaphoreAcquire	16	static
+../Core/Src/eos_semaphore.c:63:14:EOS_SemaphoreRelease	16	static
+../Core/Src/eos_semaphore.c:90:20:EOS_SemaphoreNew	24	static
